@@ -61,9 +61,9 @@ classDiagram
 	RegularCustomer --|> Customer
 	Bill --o Customer: Belongs to
 	Bill ..|> Payment Counter: Accepts
-	Bill ..|> Discount
-	Bill ..|> PurchaseDetail
-	Discount ..|> PurchaseDetail
+	Bill ..> Discount
+	Bill ..> PurchaseDetail
+	Discount ..> PurchaseDetail
 	Customer -- PurchaseDetail
 	PurchaseDetail -- Product
 ```
