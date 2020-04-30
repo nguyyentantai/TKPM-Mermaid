@@ -1,3 +1,4 @@
+```mermaid
 classDiagram
 	class Customer
 	Customer: custName: String
@@ -65,3 +66,4 @@ classDiagram
 	Discount ..|> PurchaseDetail
 	Customer -- PurchaseDetail
 	PurchaseDetail -- Product
+```
