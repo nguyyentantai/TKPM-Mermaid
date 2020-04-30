@@ -1,0 +1,14 @@
+stateDiagram
+    
+    [*] --> Idle
+    Idle --> VerifyAccount
+
+
+    state Idle
+    state VerifyAccount {
+        VerifyCard --> CardValid: cardValid
+        VerifyCard --> Idle: else
+        state CardValid
+    }
+
+    
