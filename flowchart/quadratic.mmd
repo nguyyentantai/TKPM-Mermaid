@@ -1,0 +1,14 @@
+graph TD
+    Start --> inp[Input a,b,c]
+    inp --> ae0{a == 0}
+    ae0 --> |YES|be0{b == 0}
+    be0 --> |YES|ce0{c == 0}
+    be0 --> |NO|1n[x = -b/a]
+    ce0 --> |YES|inf[Infinity of result]
+    ce0 --> |NO|nos[No solutions]
+    ae0 --> |NO|delta[delta = b^2 - 4ac]
+    delta --> deltaeb0{delta >= 0}
+    deltaeb0 --> |YES|deltae0{delta == 0}
+    deltae0 --> |YES| 1nn[x = -b/2a]
+    deltae0 --> |NO|tworeal["x = -(-b-sqrt(delta))/2a<br />x = -(-b+sqrt(delta))/2a"]
+    deltaeb0 --> |NO|noreal[No solutions]
