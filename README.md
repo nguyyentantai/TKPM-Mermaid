@@ -1,7 +1,4 @@
 ---
-title: 'Project documentation template'
-disqus: hackmd
----
 Seminar \#1 - Mermaid
 ===
 ###### tags: ```TKPM-Mermaid```
