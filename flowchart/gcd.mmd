@@ -1,0 +1,12 @@
+graph TD
+    Start --> 1[Input A,B]
+    1 --> c1(( ))
+    c1 --> cd1{B = 0}
+    c2(( )) --> c1
+    cd1 -->|NO| bno{A > B}
+    cd1 -->|YES| pa[Print A]
+    bno -->|NO| asb[B=B-A]
+    bno -->|YES| asaa[A=A-B]
+    asaa --> c2
+    asb --> c2
+    pa --> END
